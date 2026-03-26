@@ -4,17 +4,22 @@ description: >-
   Supports OpenAI-compatible and Anthropic-compatible endpoints,
   streaming, tool use, multimodal inputs, TTS, and thinking mode.
 version: 0.1.0
+repository: https://github.com/nervouna/mimo_flutter_sdk_community
+
+topics:
+  - api-client
+  - llm
+  - openai
+  - anthropic
+  - streaming
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   http: ">=1.0.0 <2.0.0"
-  json_annotation: ">=4.8.0 <5.0.0"
 
 dev_dependencies:
   test: ">=1.24.0"
   mocktail: ">=1.0.0"
-  json_serializable: ">=6.7.0"
-  build_runner: ">=2.4.0"
   lints: ">=3.0.0"
