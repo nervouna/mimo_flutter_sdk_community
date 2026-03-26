@@ -1,4 +1,6 @@
-# mimo_flutter_sdk_community
+# MiMo Flutter SDK Community
+
+[中文文档](README_ZH.md)
 
 Pure Dart client for the [Xiaomi MIMO](https://platform.xiaomimimo.com/) large language model API.
 
