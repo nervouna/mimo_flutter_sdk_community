@@ -291,4 +291,4 @@ try {
 
 ## License
 
-MIT
+[WTFPL](LICENSE)
