@@ -22,8 +22,8 @@ class AnthropicMessagesRequest {
   final int maxTokens;
   final List<AnthropicMessage> messages;
 
-  /// System prompt — can be a String or List<AnthropicContent>.
-  final dynamic system;
+  /// System prompt — can be a [String] or [List<AnthropicContent>].
+  final Object? system;
   final double? temperature;
   final double? topP;
   final int? topK;
