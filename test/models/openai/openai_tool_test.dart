@@ -147,9 +147,7 @@ void main() {
         name: 'test',
         arguments: 'null',
       );
-      // jsonDecode('null') returns null, which is not a Map
-      // This would throw on the cast; just verify it doesn't crash
-      expect(() => fn.parsedArguments, throwsA(isA<TypeError>()));
+      expect(fn.parsedArguments, <String, dynamic>{});
     });
 
     test('parsedArguments returns empty map for invalid JSON', () {
@@ -157,8 +155,7 @@ void main() {
         name: 'test',
         arguments: 'not json',
       );
-      // The fallback returns Map<dynamic,dynamic> which fails the cast
-      expect(() => fn.parsedArguments, throwsA(isA<TypeError>()));
+      expect(fn.parsedArguments, <String, dynamic>{});
     });
 
     test('fromJson/toJson', () {

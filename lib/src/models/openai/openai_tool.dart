@@ -160,14 +160,16 @@ class OpenAIToolCallFunction {
       };
 
   /// Parsed arguments as a Map.
-  Map<String, dynamic> get parsedArguments =>
-      _jsonDecode(arguments) as Map<String, dynamic>;
+  Map<String, dynamic> get parsedArguments => _jsonDecode(arguments);
 
-  static dynamic _jsonDecode(String s) {
+  static Map<String, dynamic> _jsonDecode(String s) {
     try {
-      return _parseJson(s);
+      final decoded = _parseJson(s);
+      if (decoded is Map<String, dynamic>) return decoded;
+      if (decoded is Map) return Map<String, dynamic>.from(decoded);
+      return <String, dynamic>{};
     } catch (_) {
-      return {};
+      return <String, dynamic>{};
     }
   }
 
