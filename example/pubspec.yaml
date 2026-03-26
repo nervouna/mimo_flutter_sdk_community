@@ -1,0 +1,10 @@
+name: mimo_flutter_sdk_community_example
+description: Example usage of mimo_flutter_sdk_community.
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  mimo_flutter_sdk_community:
+    path: ../
